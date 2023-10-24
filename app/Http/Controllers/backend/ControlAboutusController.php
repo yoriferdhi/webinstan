@@ -76,7 +76,7 @@ class ControlAboutusController extends Controller
 
         $validatedData['updated_by']    = auth()->user()->id;
 
-        // $insert = Aboutus::where('id', $aboutus->id)
+        // $insert = Aboutus::where('id', $aboutus->id) //id ini ga ke baca
         $insert = Aboutus::where('id', 1)
             ->update($validatedData);
 // ddd($insert);
