@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul id="navbar-navlist" class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/profile">Tentang Kami</a>
+                    <a class="nav-link" href="/about-us">Tentang Kami</a>
                 </li>                                                                     
                 <li class="nav-item">
                     <a class="nav-link" href="/product">Tipe Unit</a>

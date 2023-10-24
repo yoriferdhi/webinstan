@@ -17,7 +17,7 @@ class ControlAboutusController extends Controller
         //
         return view('backend.aboutus.index', [
             'title' => 'About Us',
-            'about'  => Aboutus::where('deleted_by', '0')->first()
+            'aboutus'  => Aboutus::where('deleted_by', '0')->first()
         ]);
     }
 
@@ -76,8 +76,10 @@ class ControlAboutusController extends Controller
 
         $validatedData['updated_by']    = auth()->user()->id;
 
-        Aboutus::where('id', $aboutus->id)
+        // $insert = Aboutus::where('id', $aboutus->id)
+        $insert = Aboutus::where('id', 1)
             ->update($validatedData);
+// ddd($insert);
         return redirect('/control/aboutus')->with('success','About Us has been Updated!');
     }
 

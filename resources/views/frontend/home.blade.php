@@ -86,7 +86,7 @@
                         <div>   
                             <h2 class="display-6 text-white mb-4">Tentang Perumahan Kami</h2>                              
                             <p class="op-8">Website perumahan dapat membantu Anda memasarkan properti Anda dengan efektif dan mencapai target pasar yang lebih luas. Desain dan template website perumahan yang tepat sangat penting untuk membuat website Anda</p>
-                            <a href="#" class="btn btn-outline-white mt-2 ms-2">Selengkapnya</a>
+                            <a href="/about-us" class="btn btn-outline-white mt-2 ms-2">Selengkapnya</a>
                         </div>
                     </div>
                 </div>               

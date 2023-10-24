@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\frontend\HomeController;
+use App\Http\Controllers\frontend\AboutUsController;
 use App\Http\Controllers\frontend\ProfileController;
 use App\Http\Controllers\frontend\VisimisiController;
 use App\Http\Controllers\frontend\NewsController;
@@ -36,6 +37,7 @@ use App\Http\Controllers\backend\ControlPublicationController;
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/home', [HomeController::class, 'index']);
+Route::get('/about-us', [AboutUsController::class, 'index']);
 Route::get('/profile', [ProfileController::class, 'index']);
 Route::get('/visimisi', [VisimisiController::class, 'index']);
 Route::get('/news', [NewsController::class, 'index']);

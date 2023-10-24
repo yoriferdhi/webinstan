@@ -11,7 +11,7 @@
                     {{ session('success') }}
                 </div>
                 @endif
-                <form action="/control/aboutus/{{ $about->id }}" method="post" enctype="multipart/form-data">
+                <form action="/control/aboutus/{{ $aboutus->id }}" method="post" enctype="multipart/form-data">
                 @method('put')
                 @csrf
                 <div class="card card-outline card-info">
@@ -21,9 +21,9 @@
                             <!-- text input -->
                             <div class="form-group">
                                 <label for="customFile">Photos</label>
-                                <input type="hidden" name="oldImage" value="{{ $about->image }}">
-                                @if($about->image)
-                                <img src="{{ asset('storage/' . $about->image) }}" class="img-preview img-fluid mb-3 col-sm-3"/>
+                                <input type="hidden" name="oldImage" value="{{ $aboutus->image }}">
+                                @if($aboutus->image)
+                                <img src="{{ asset('storage/' . $aboutus->image) }}" class="img-preview img-fluid mb-3 col-sm-3"/>
                                 @else
                                 <img class="img-preview img-fluid mb-3 col-sm-3"/>
                                 @endif
@@ -43,7 +43,7 @@
                                 <!-- text input -->
                                 <div class="form-group">
                                 <label>Header Title</label>
-                                <input type="text" class="form-control @error('title') is-invalid @enderror" placeholder="Sub Title" id="title" name="title" value="{{ old('title', $about->title) }}">
+                                <input type="text" class="form-control @error('title') is-invalid @enderror" placeholder="Sub Title" id="title" name="title" value="{{ old('title', $aboutus->title) }}">
                                 @error('title')
                                     <span id="exampleInputEmail1-error" class="error invalid-feedback">{{ $message }}</span>
                                 @enderror
@@ -59,7 +59,7 @@
                                 <span id="exampleInputEmail1-error" class="error invalid-feedback">{{ $message }}</span>
                                 @enderror
                                 <textarea id="summernote" name="content">
-                                {{ old('content', $about->content ) }}
+                                {{ old('content', $aboutus->content ) }}
                                 </textarea>
                             </div>
                             </div>
